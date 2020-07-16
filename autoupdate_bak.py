@@ -16,6 +16,8 @@ for i in range(1000):
     try:
         g.add("--all")
         g.commit('-m auto update')
+        g.pull('https://github.com/99kies/autoupdate')
+
         g.push()
     except:
         try:
