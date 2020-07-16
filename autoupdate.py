@@ -13,9 +13,9 @@ repo = Repo(dirfile)
 for i in range(1000):
     time.sleep(2)
     g = repo.git
-    g.add("--all")
-    g.commit('-m auto update')
     try:
+        g.add("--all")
+        g.commit('-m auto update')
         g.push()
     except:
         try:
