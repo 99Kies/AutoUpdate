@@ -11,7 +11,7 @@ dirfile =  os.path.abspath('')
 repo = Repo(dirfile)
 
 for i in range(1000):
-    time.sleep(2)
+    time.sleep(1)
     g = repo.git
     try:
         g.add("--all")
