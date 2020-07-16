@@ -18,8 +18,9 @@ for i in range(1000):
     try:
         g.push()
     except:
-        g.pull()
-        g.push()
-    finally:
-        print('Already Update')
+        try:
+            g.pull()
+            g.push()
+        except:
+            print('Already Update')
     print('Successful push!')
