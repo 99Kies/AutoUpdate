@@ -20,4 +20,6 @@ for i in range(1000):
     except:
         g.pull()
         g.push()
+    finally:
+        print('Already Update')
     print('Successful push!')
