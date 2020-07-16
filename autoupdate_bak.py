@@ -19,7 +19,7 @@ for i in range(1000):
         g.push()
     except:
         try:
-            g.pull()
+            g.pull('https://github.com/99kies/autoupdate')
             g.push()
         except:
             print('Already Update')
